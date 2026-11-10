@@ -88,6 +88,11 @@ class ProfilePage extends StatelessWidget{
                     title: 'Kelas',
                     value: 'Software Engineering',
                   ),
+                  InfoTile(
+                    icon: Icons.code,
+                    title: 'Github',
+                    value: 'https://github.com/bila200306',
+                  )
                   ]
                 )
               )
