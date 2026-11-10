@@ -79,7 +79,7 @@ class ProfilePage extends StatelessWidget{
   }
 }
 
-class InfoTile extends StatetlessWidget{
+class InfoTile extends StatelessWidget{
   final IconData icon;
   final String title;
   final String value;
@@ -90,4 +90,13 @@ class InfoTile extends StatetlessWidget{
     required this.title,
     required this.value,
   });
+
+@override
+Widget build(BuildContext context){
+  return ListTile(
+    leading: Icon(icon),
+    title: Text(title),
+    subtitle: Text(value),
+  );
+}
 }
