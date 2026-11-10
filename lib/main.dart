@@ -94,6 +94,24 @@ class ProfilePage extends StatelessWidget{
                     value: 'https://github.com/bila200306',
                   )
                   ]
+                ),
+              ),
+              const SizedBox(height: 25),
+              Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text(
+                        'Keahlian',
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ]
+                  )
                 )
               )
           ]
