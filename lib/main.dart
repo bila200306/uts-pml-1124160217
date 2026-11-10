@@ -110,7 +110,23 @@ class ProfilePage extends StatelessWidget{
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                    ]
+                      const SizedBox(height: 8),
+                      const InfoTile(
+                        icon: Icons.video_camera_back,
+                        title: 'Editing Video & Foto',
+                        value: 'Menguasai Capcut, Adobe Photoshop,'
+                      ),
+                      const InfoTile(
+                        icon: Icons.photo,
+                        title: 'Desain Grafis',
+                        value: 'Menguasai Canva, Figma',
+                      ),
+                      const InfoTile(
+                        icon: Icons.computer,
+                        title: 'Microsoft Office',
+                        value: 'Menguasai Microsoft Word, Excel, Power Point',
+                      )
+                    ],
                   )
                 )
               )
