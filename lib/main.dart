@@ -83,6 +83,11 @@ class ProfilePage extends StatelessWidget{
                     title: 'No.Hp',
                     value: '082373648103',
                   ),
+                  InfoTile(
+                    icon: Icons.class_,
+                    title: 'Kelas',
+                    value: 'Software Engineering',
+                  ),
                   ]
                 )
               )
