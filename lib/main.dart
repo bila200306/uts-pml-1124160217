@@ -70,6 +70,18 @@ class ProfilePage extends StatelessWidget{
                   'Program Studi : Teknik Informatika',
                   style: Theme.of(context).textTheme.headlineMedium,
                   textAlign: TextAlign.center,),
+
+              const SizedBox(height: 25),
+              Card(
+                child: Column(
+                  children: const[
+                    InfoTile(icon: Icons.email,
+                    title: 'Email',
+                    value: 'nabilainnas3@gmail.com',),
+                  
+                  ]
+                )
+              )
           ]
         ),
         ),
