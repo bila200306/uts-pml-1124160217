@@ -56,11 +56,25 @@ class ProfilePage extends StatelessWidget{
               child: Icon(
                 Icons.person, size: 50, color: Colors.white,
               ),
-            )
+            ),
+            const SizedBox(height: 16),
+            Text(
+              'Nama : Nabila Innas',
+              style: Theme.of(context).textTheme.headlineSmall,),
+              const SizedBox(height: 8),
+              Text(
+                'NIM : 1124160217',
+                style: Theme.of(context).textTheme.headlineMedium,),
+                const SizedBox(height: 8),
+                Text(
+                  'Program Studi : Teknik Informatika',
+                  style: Theme.of(context).textTheme.headlineMedium,
+                  textAlign: TextAlign.center,),
           ]
-        ))
-
-      ),)
-    )
+        ),
+        ),
+      ),
+      ),
+    );
   }
 }
