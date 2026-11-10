@@ -78,7 +78,11 @@ class ProfilePage extends StatelessWidget{
                     InfoTile(icon: Icons.email,
                     title: 'Email',
                     value: 'nabilainnas3@gmail.com',),
-                  
+                  InfoTile(
+                    icon: Icons.phone,
+                    title: 'No.Hp',
+                    value: '082373648103',
+                  ),
                   ]
                 )
               )
