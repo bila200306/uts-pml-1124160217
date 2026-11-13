@@ -7,18 +7,17 @@ class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return MaterialApp(
-      title: 'Profil Mahasiswa',
+      title:'Profil Mahasiswa',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
+      theme:ThemeData(
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       darkTheme: ThemeData(
         useMaterial3: true,
         brightness: Brightness.dark,
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.deepPurple,
-          brightness: Brightness.dark),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple,
+        brightness: Brightness.dark),
       ),
       themeMode: ThemeMode.system,
       home: const ProfilePage(),
@@ -31,30 +30,29 @@ class ProfilePage extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Profil Mahasiswa'),
-        centerTitle: true,
-        actions: [
+      appBar:AppBar(
+        title:const Text('Profil Mahasiswa'),
+        centerTitle:true,
+        actions:[
           IconButton(
-            icon: const Icon(Icons.info_outline),
-            onPressed: (){
+            icon:const Icon(Icons.info_outline),
+            onPressed:(){
               ScaffoldMessenger.of(context).showSnackBar(
                 const SnackBar(
-                  content: Text('Ini adalah Profile Mahasiswi Nabila Innas'),
+                  content:Text('Ini adalah Profile Mahasiswi Nabila Innas'),
                 ),
               );
             })
-        ]
+        ],
       ),
-      body: SafeArea(child: SingleChildScrollView(
-        child: Padding(padding: const EdgeInsets.all(16.0),
-        child: Column(
-          children: [
+      body:SafeArea(child: SingleChildScrollView(
+        child:Padding(padding: const EdgeInsets.all(16.0),
+        child:Column(
+          children:[
             const CircleAvatar(
-              radius: 50,
+              radius:50,
               backgroundColor: Colors.deepPurple,
-              child: Icon(
-                Icons.person, size: 50, color: Colors.white,
+              child:Icon(Icons.person, size: 50, color: Colors.white,
               ),
             ),
             const SizedBox(height: 16),
@@ -62,11 +60,11 @@ class ProfilePage extends StatelessWidget{
               'Nama : Nabila Innas',
               style: Theme.of(context).textTheme.headlineSmall,),
               const SizedBox(height: 8),
-              Text(
+            Text(
                 'NIM : 1124160217',
                 style: Theme.of(context).textTheme.headlineMedium,),
                 const SizedBox(height: 8),
-                Text(
+            Text(
                   'Program Studi : Teknik Informatika',
                   style: Theme.of(context).textTheme.headlineMedium,
                   textAlign: TextAlign.center,),
