@@ -53,7 +53,27 @@ class HalamanProfil extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          
+          const SizedBox(height: 5),
+          const Text(
+            'Mahasiswa Software Engineering',
+            style: TextStyle(
+              fontSize: 14,
+              color: Colors.grey,
+            ),
+          ),
+          const SizedBox(height: 25),
+          Card(
+            child: Column(
+              children: const[
+                ListTile(
+                  leading: Icon(Icons.badge_outlined),
+                  title: Text('NIM'),
+                  subtitle: Text('1124160217'),
+                ),
+                
+              ]
+            )
+          )
           ]
         )
       )
