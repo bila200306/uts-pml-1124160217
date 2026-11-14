@@ -70,7 +70,18 @@ class HalamanProfil extends StatelessWidget {
                   title: Text('NIM'),
                   subtitle: Text('1124160217'),
                 ),
-                
+                Divider(height: 1),
+                ListTile(
+                  leading: Icon(Icons.school_outlined),
+                  title: Text('Program Studi'),
+                  subtitle: Text('Software Engineering'),
+                ),
+                Divider (height: 1),
+                ListTile( 
+                leading: Icon(Icons.groups_outlined),
+                title: Text('Kelas'),
+                subtitle: Text('TI24SE.M'),
+                ),
               ]
             )
           )
