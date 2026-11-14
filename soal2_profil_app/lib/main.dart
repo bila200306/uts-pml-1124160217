@@ -82,9 +82,33 @@ class HalamanProfil extends StatelessWidget {
                 title: Text('Kelas'),
                 subtitle: Text('TI24SE.M'),
                 ),
-              ]
-            )
-          )
+              ],
+            ),
+          ),
+          const SizedBox(height: 15),
+          Card(
+            child: Padding(
+              padding: const EdgeInsets.all(16),
+              child: Column(
+                crossAxisAlignment:CrossAxisAlignment.start,
+                children: const[
+                  Text(
+                    'Tentang Saya',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(height: 10),
+                  Text(
+                  'Hallo! Saya Nabila Innas, Mahasiswa Semester 5 '
+                  'Dengan Jurusan Software Engineering yang tertarik'
+                  'dengan teknologi, desain grafis.',),
+                ],
+              ),
+            ),
+          ),
+          
           ]
         )
       )
