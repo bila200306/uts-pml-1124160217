@@ -108,10 +108,33 @@ class HalamanProfil extends StatelessWidget {
               ),
             ),
           ),
-          
-          ]
-        )
-      )
+          const SizedBox(height: 15),
+          Card(
+            child: Column(
+              children: const[
+                ListTile(
+                  leading: Icon(Icons.email_outlined),
+                  title: Text('Email'),
+                  subtitle: Text('nabilainnas3@gmail.com'),
+                ),
+                Divider(height: 1),
+                ListTile(
+                  leading: Icon(Icons.phone_outlined),
+                  title: Text('No. Telpon'),
+                  subtitle: Text('0823-7364-8103'),
+                ),
+                Divider(height:1),
+                ListTile(
+                leading: Icon(Icons.code),
+                title: Text('Github'),
+                subtitle: Text('https://github.com/bila200306'),
+                ),
+              ],
+            ),
+          ),
+          ],
+        ),
+      ),
     );
   }
 }
