@@ -60,7 +60,7 @@ class _ProfilePageState extends State<ProfilePage>{
           Center(
             child: CircleAvatar(
               radius: 60,
-              backgroundImage: const AssetImage('assets/images/profile.jpeg',),
+              backgroundImage: const AssetImage('assets/images/profil.jpeg',),
             ),
           ),
 
