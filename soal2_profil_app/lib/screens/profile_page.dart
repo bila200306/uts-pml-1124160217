@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../models/profile.dart';
 import 'edit_profile_page.dart';
+import '../widgets/info_tile.dart';
 
 
 class ProfilePage extends StatefulWidget{
@@ -49,7 +50,7 @@ class _ProfilePageState extends State<ProfilePage>{
         actions: [
           IconButton(
             onPressed: bukaEditProfil,
-            icon: const Icon(Icons.edit),
+            icon: Icon(Icons.edit),
           ),
         ],
       ),
@@ -81,15 +82,15 @@ class _ProfilePageState extends State<ProfilePage>{
           Card(
             child: Column(
               children: [
-                ListTile(
-                  leading: const Icon(Icons.badge),
-                  title: const Text('NIM'),
-                  subtitle: Text(profile.nim),
+                InfoTile(
+                  icon: Icons.badge,
+                  title: 'NIM',
+                  subtitle: profile.nim,
                 ),
-                ListTile(
-                  leading: const Icon(Icons.school),
-                  title: const Text('Kelas'),
-                  subtitle: Text(profile.kelas),
+                InfoTile(
+                  icon: Icons.school,
+                  title: 'Kelas',
+                  subtitle: profile.kelas,
                 ),
               ],
             ),
@@ -97,35 +98,35 @@ class _ProfilePageState extends State<ProfilePage>{
           Card(
             child: Column(
               children: [
-                ListTile(
-                  leading: const Icon(Icons.email),
-                  title: const Text('Email'),
-                  subtitle: Text(profile.email),
+                InfoTile(
+                  icon: Icons.email,
+                  title: 'Email',
+                  subtitle: profile.email,
                 ),
-                ListTile(
-                  leading: const Icon(Icons.phone),
-                  title: const Text('Nomor HP'),
-                  subtitle: Text(profile.hp),
+                InfoTile(
+                  icon: Icons.phone,
+                  title: 'Nomor HP',
+                  subtitle: profile.hp,
                 ),
-                ListTile(
-                  leading: const Icon(Icons.code),
-                  title: const Text('Github'),
-                  subtitle: Text(profile.github),
+                InfoTile(
+                  icon: Icons.code,
+                  title: 'Github',
+                  subtitle: profile.github,
                 ),
               ],
             ),
           ),
           Card(
-            child: ListTile(
-              leading: const Icon(Icons.person),
-              title: const Text('Tentang Saya'),
-              subtitle: Text(profile.bio),
+            child: InfoTile(
+              icon: Icons.person,
+              title: 'Tentang Saya',
+              subtitle: profile.bio,
             ),
           ),
           const SizedBox(height: 16),
           ElevatedButton.icon(
             onPressed: bukaEditProfil,
-            icon: const Icon(Icons.edit),
+            icon: Icon(Icons.edit),
             label: const Text('Edit Profil'),
           ),
         ],
